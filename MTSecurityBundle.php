@@ -6,8 +6,8 @@ namespace SecurityBundle;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * DTSecurityBundle
+ * MTSecurityBundle
  */
-class DTSecurityBundle extends Bundle
+class MTSecurityBundle extends Bundle
 {
 }

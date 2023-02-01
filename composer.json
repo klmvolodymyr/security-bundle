@@ -1,0 +1,33 @@
+{
+    "name": "volodymyr-klymniuk/security-bundle",
+    "description": "Symfony bundle for security",
+    "type": "library",
+    "license": "MIT-advertasing",
+    "autoload": {
+        "psr-4": {
+            "VolodymyrKlymniuk\\SecurityBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { "Tests\\": "tests/" }
+    },
+    "authors": [
+        {
+            "name": "Volodymyr Klymniuk",
+            "email": "Volodymyr.Klymniuk@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "lcobucci/jwt": "^4.3",
+        "lexik/jwt-authentication-bundle": "^2.16",
+        "volodymyr-klymniuk/std-lib": "^0.0.1",
+        "volodymyr-klymniuk/sf-functional-test": "1.x-dev"
+    },
+    "config": {
+        "secure-http": false
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
