@@ -43,6 +43,7 @@ class MTJWTToken extends JWTUserToken
     public function isProfileBelongsToUser(string $profileId): bool
     {
         foreach ($this->getProfiles() as $profile) {
+
             if ($profileId === $profile->id) {
                 return true;
             }

@@ -11,13 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 /**
  * @method ApiTester createTester()
  */
-trait SecurityTrait
-{
-    /**
-     * @param string $userId
-     *
-     * @return string
-     */
+trait SecurityTrait {
     public function getAuthToken(string $userId = '1'): string
     {
         $user = new JWTUser($userId, $userId);
@@ -28,10 +22,6 @@ trait SecurityTrait
 
     /**
      * @dataProvider checkPermissionFailedProvider
-     *
-     * @param string $path
-     * @param string $method
-     * @param array  $data
      */
     public function testCheckPermissionFailed(string $path, string $method = Request::METHOD_GET, array $data = [])
     {
